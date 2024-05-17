@@ -1,0 +1,8 @@
+Necessário conhecimento com JSF, Spring Framework, Hibernate, Java EE
+ qualidade de código (TDD, BDD, Clean Code, Code Review) e metodologias ágeis (Scrum/ Kanban).
+
+Principais frameworks e bibliotecas: EJB; JSF; PrimeFaces; JPA; Hibernate; JasperReports; Quartz; 
+
+Postman
+
+Java web = java ee

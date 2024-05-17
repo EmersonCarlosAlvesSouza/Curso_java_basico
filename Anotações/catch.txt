@@ -1,0 +1,134 @@
+catch: tratamento de erro, exemplo:
+
+int[] numeros = {4, 8, 16, 32, 64, 128};
+int[] denominadores = {2, 0, 4, 8, 0, 2};
+		
+for(int i=0; i<numeros.length; i++) {
+	System.out.println(numeros[i] + "/" + denominadores[i] + " = " + (numeros[i]/denominadores[i]));
+}
+output:
+4/2 = 2
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+
+Erro devido a divisão por 0, mas quando usamos o tratamento de erro fica assim:
+int[] numeros = {4, 8, 16, 32, 64, 128};
+		int[] denominadores = {2, 0, 4, 8, 0};
+		
+		for(int i=0; i<numeros.length; i++) {
+			try {
+				System.out.println(numeros[i] + "/" + denominadores[i] + " = " + (numeros[i]/denominadores[i]));	
+			}catch (ArithmeticException e) {
+				System.out.println("Divisão por 0");
+			}
+			
+			
+		}
+
+output:
+4/2 = 2
+Divisão por 0
+16/4 = 4
+32/8 = 4
+Divisão por 0
+128/2 = 64
+
+
+Para capturar um erro genérico podemos usar o Throwable, Throwable é a classe MÃE de todas as exceptions:
+catch (Throwable e){}
+
+finally: usada em arquivos ou bando de dados. É sempre executada após o try ou cacth.
+Ex:
+
+int[] numeros = { 4, 8, 16, 32, 64, 128 };
+int[] denominadores = { 2, 0, 4, 8, 0 };
+
+for (int i = 0; i < numeros.length; i++) {
+	try {
+		System.out.println(numeros[i] + "/" + denominadores[i] + " = " + (numeros[i] / denominadores[i]));
+	} catch (ArithmeticException e) {
+		System.out.println("Divisão por 0");
+	} catch (Throwable e) {
+		System.out.println("Erro generico");
+		}finally {
+		System.out.println("Essa linha é impressa sempre após o try ou catch");
+	}
+
+}
+
+output:
+4/2 = 2
+Essa linha é impressa sempre após o try ou catch
+Divisão por 0
+Essa linha é impressa sempre após o try ou catch
+16/4 = 4
+Essa linha é impressa sempre após o try ou catch
+32/8 = 4
+Essa linha é impressa sempre após o try ou catch
+Divisão por 0
+Essa linha é impressa sempre após o try ou catch
+Erro generico
+Essa linha é impressa sempre após o try ou catch
+
+
+Exit: finaliza a execução.
+
+
+Ex:
+int[] numeros = { 4, 8, 16, 32, 64, 128 };
+int[] denominadores = { 2, 0, 4, 8, 0 };
+
+for (int i = 0; i < numeros.length; i++) {
+	try {
+		System.out.println(numeros[i] + "/" + denominadores[i] + " = " + (numeros[i] / denominadores[i]));
+	} catch (ArithmeticException e) {
+		System.out.println("Divisão por 0");
+		System.exit(0);
+	} catch (Throwable e) {
+		System.out.println("Erro generico");
+		System.exit(0);
+		}finally {
+		System.out.println("Essa linha é impressa sempre após o try ou catch");
+	}
+
+}
+
+output:
+
+4/2 = 2
+Terminando a execução do bloco try
+Divisão por 0
+
+Exceptions: Usar o Exception inves do Throwable.
+
+
+	try {
+		System.out.println(numeros[i] + "/" + denominadores[i] + " = " + (numeros[i]/denominadores[i]));	
+	}
+			
+	catch (Exception e) {
+		System.out.println(e.getMessage());
+		e.printStackTrace();
+	}
+			
+getMessage(): mostra o erro.
+printStackTrace(): mostra onde ocorreu o erro.
+
+
+Duvida, ja tinhamos as mensagens de erro antes de usar o try,catch, getMessage, printStackTrace, então pq usar eles?
+Simples, quando não usamos eles na primira exceção/erro o programa para, mas quando usamos eles mostra todas
+as execuções até o final.
+
+
+throws: usamos quando não queremos tratar as Exception naquele momento então passamos a responsabilidade para
+quem for usar o metodo.
+
+
+
+
+
+
+
+
+
+
+

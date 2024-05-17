@@ -1,0 +1,123 @@
+Pergunta 1: O que é Java?
+Parece uma pergunta bem simples, não é? Bem, o seu potencial empregador provavelmente espera uma resposta 
+clara e direta, então vamos dar a ele uma.
+
+Java é uma linguagem de programação segura de alto nível orientada a objetos. Foi criado e desenvolvido 
+em 1991 por um homem chamado James Gosling . Java é projetado para representar o slogan “ WORA ” - “ 
+escreva uma vez, rode em qualquer lugar ”. É conhecido por ser flexível e funcionar com alto desempenho.
+
+Pergunta 2: O Java é totalmente orientado a objetos?
+Esta é uma questão de entrevista Java bastante possível e não, não é totalmente orientada a objetos. 
+Java usa alguns tipos de dados ( char , byte , float ) que não são objetos.
+
+Pergunta 3: Nomeie alguns recursos Java notáveis.
+Para programadores e desenvolvedores iniciantes, o recurso mais importante é a simplicidade . Java é 
+considerado bastante fácil de aprender e dominar, especialmente quando comparado com outras linguagens 
+de programação.
+
+O Java também é considerado muito seguro quando comparado a outras linguagens de programação. Isso se 
+deve a um intérprete chamado JVM - esse intérprete é instalado junto com o próprio Java e fornece 
+constantemente ao seu computador as atualizações de segurança mais recentes da Internet.
+
+Além disso, o Java é totalmente portátil. Por causa do princípio “ WORA ” no qual o Java é construído, 
+ele pode ser transferido e aplicado em qualquer máquina que você desejar - é totalmente flexível e 
+multifuncional.
+
+Questão 4: O que é especial sobre o Java 8?
+Em suas perguntas de entrevista em Java, é mais provável que você obtenha principalmente os tipos de 
+comparação. Essa atualização da linguagem de programação foi uma das mais notáveis ​​- seria benéfico 
+saber quais novos recursos surgiram dela.
+
+O Java 8 introduziu o suporte de linguagem para o String, forneceu uma API de Data / Hora aprimorada e 
+promoveu o desenvolvimento de JVM - o sistema responsável por muitas coisas Java, incluindo sua segurança. No geral, o Java 8 tornou a linguagem de programação mais acessível e melhor alinhada com as linguagens de programação modernas.
+
+Esta provavelmente será uma das principais perguntas da entrevista do Java 8 que você receberá. Apenas 
+tenha em mente que o Java 8 foi uma grande melhoria tanto no desempenho quanto na segurança, e você 
+deve estar pronto para ir.
+
+Pergunta 5: Quais são os 'especificadores de acesso' em Java?
+No total, quatro especificadores de acesso poderiam ser perguntados como uma de suas perguntas de 
+entrevista Java. Eles são os seguintes: público , privado , protegido e padrão .
+
+Os especificadores públicos permitem acesso a qualquer classe ou por qualquer método (daí seu nome). 
+Ao contrário disso, os especificadores privados permitem acesso somente dentro da classe especificada. 
+Protected permite acesso que de alguma forma se correlaciona com a classe - seja de dentro da classe, de 
+uma subclasse ou simplesmente do mesmo pacote. Finalmente, default significa o escopo padrão (padrão) e 
+permite acesso somente do mesmo pacote.
+
+Pergunta 6: O que é um 'construtor'?
+Um “ construtor ” é uma parte de um código que inicializa um objeto específico . Java tem dois tipos de 
+construtores - um padrão e um parametrizado .
+
+Pergunta 7: O que é um 'objeto'?
+Uma pergunta comum sobre a entrevista Java. Um objeto em Java tem um estado e comportamento. A 
+definição mais comum e compreensível de um objeto é que ele é uma instância de uma classe.
+
+
+Pergunta 8: Qual é a diferença entre 'equals ()' e '=='?
+
+você deve usar == quando deseja verificar se duas variáveis de referência apontam para o mesmo objeto na 
+memória, e você deve usar equals() quando deseja comparar o conteúdo (ou a igualdade semântica) de dois 
+objetos.
+
+
+Questão 9: Quais referências a objetos diferentes podem existir em Java?
+De todas as questões de entrevista Java, esta cai na categoria fácil - em Java, todas as referências de objeto são nulas .
+
+Questão 10: Quais são as diferenças entre JDK, JVM e JRE?
+O JDK é um kit de desenvolvimento Java . É a principal ferramenta em Java usada para compilar os programas 
+dessa linguagem. Dentro do pacote, contém todas as ferramentas necessárias para começar a usá-lo.
+
+Eu já mencionei o JVM anteriormente - significa Java Virtual Machine . É uma máquina que cria o ambiente 
+no qual o bytecode Java pode funcionar corretamente.
+
+O JRE é o Java Runtime Environment . Esse é o tipo de ambiente que a JVM fornece - permite que o 
+bytecode Java seja executado e funcione corretamente.
+
+Agora que abordamos algumas das principais questões, podemos fazer a transição para perguntas e respostas 
+para desenvolvedores e programadores experientes. Essas questões serão principalmente relacionadas ao 
+código.
+
+Perguntas avançadas
+Pergunta 1: Qual é a diferença entre "sobrecarga de método" e "substituição de método"?
+Uma das primeiras perguntas básicas possíveis sobre a entrevista com Java poderia ser essa. Em um caso 
+de "sobrecarga de método", os métodos que estão na mesma classe compartilham o mesmo nome, mas seus 
+parâmetros são diferentes. Isso está preocupado com extensões do comportamento do método mais do que 
+qualquer outra coisa. Inversamente, as subclasses de "substituição de método" possuem métodos com o 
+mesmo nome e parâmetros. O objetivo aqui é alterar o comportamento do método já existente.
+
+
+Pergunta 3: É possível executar um programa sem o método 'main ()'?
+Pergunta de entrevista Java bastante padrão e sim, é possível fazer isso. Uma das maneiras mais comuns de
+ executar um programa como esse é usando um bloco estático.
+
+Outra resposta: Não é possivel executar um programa Java sem o metodo main(), pois este método é o ponto de
+entrada do programa. Quando um programa Java é executado, o sistema procura pelo método main() na classe 
+especifica e começa a execução a partir deste ponto.
+
+
+Pergunta 4: O que é o polimorfismo de tempo de execução?
+Um “ polimorfismo de tempo de execução ” é um processo no qual uma chamada específica que é emitida para 
+um método substituído será resolvida em tempo de execução em vez de tempo de compilação
+
+Questão 5: O que é 'herança'?
+O termo é honestamente quase auto-explicativo - herança é quando um objeto adquire as propriedades e parâmetros de outro (de uma classe diferente). A sobreposição do método acima discutido usa isso - a ideia principal da herança é que você pode construir novas classes em outras já existentes. Existem cinco tipos diferentes de herança, mas o Java suporta apenas quatro (heranças múltiplas não são suportadas). Por que não são múltiplas heranças suportadas? Há apenas um motivo específico - para simplificar o programa. Esta deve ser uma nota importante a ser lembrada para suas perguntas da entrevista Java.
+
+Pergunta 6: Nomeie a superclasse para todas as outras classes em Java.
+Este é um dos mais fáceis - no entanto, devo acrescentar que é uma das principais questões. A superclasse em Java é a classe de objeto .
+
+Pergunta 7: O que significa 'super' em Java?
+“Super” em Java é usado como referência para apontar para um objeto de classe pai imediato. O comando 
+também pode ser usado para chamar métodos e construtores de classe pai imediatos.
+
+
+Questão 10: O que é 'clonagem de objetos'?
+Como você provavelmente já percebeu, muitas dessas perguntas são bastante auto-explicativas. Este não é 
+exceção.
+
+O comando “object cloning” é usado para criar uma cópia idêntica do objeto. Isso é feito usando o método 
+clone () da classe de objeto.
+
+
+
+

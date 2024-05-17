@@ -1,0 +1,72 @@
+jdk: kite de feramentas para o desenvolvedor
+jre: necessario para rodar programas java nos computadores. EX: o app da receita federal foi feito em java,
+precisamos do jre para executar o app (feito normalmente para o usuario final q não é desenvolvedor).
+jvm: maquina virtual java, recebe o .class q torna possivel rodar em qualquer sistema operacional.
+
+ex: fazemos um codigo em java quando compilamos transformamos ele de .java para .class esse .class é o nosso
+bytecode e sera interpretato pela jvm para rodar em qualquer sistema operacional.
+
+
+
+
+Convenções do java: nome de classe começa com maiusculo (CamelCase) e cada nova paralavra maiusculo. Ex: HelloWorld
+
+
+
+
+
+O que é uma classe?
+Nome da classe
+Conjunto de atributos (descrição)
+Conjunto de métodos (comportamentos da classe) ex: classe cachorro: latir, comer, dormir etc. metodos = ações/comportamentos
+
+
+Herança: Permite reutilização da estrutura e do comportamento de uma classe
+Ex: Classe 	Animal 
+	mamifero	reptio
+      Felino	           cobra
+  Tigre   Gato           
+
+Polimorfismo: Habilidade de variaveis terem "mais de um tipo". Ex: Classe Animal: todos emitem som, mas o som
+é diferente dependendo do animal.
+
+Pacotes:
+Formas de organizar suas classes
+Convenção: dominio + projeto + pasta
+Ex: com.loiane.cursojava.aula09
+
+Variaveis:
+<tipo> <nome da variavel>;
+<tipo> <nome da variavel> = <valor>;
+
+Tipos primitivos:
+int, float, char
+
+
+Podemos usar o atalho Sysout e depois apertar Ctrl + espaço, para autocompletar o System. out. println().
+
+public class Variaveis {
+
+	public static void main(String[] args) {
+		
+		
+		//convenção java
+		int idade = 23;
+		String nome = "emerson";
+		String nomeDoCachorro = "Cicarelly";
+		System.out.println("Nome " + nome + "\nIdade: " + idade + "\nNome do cachorro(a): " + nomeDoCachorro);
+		
+		//má pratica
+		int a = 10;
+		String b = "Emerson";
+		//dê nome significativos as variaveis
+	}
+
+}
+
+Se você fechou o Project Explorer acidentalmente no Eclipse, você pode reabri-lo facilmente seguindo 
+estes passos:
+
+No menu superior do Eclipse, vá para "Window" (Janela).
+Selecione "Show View" (Mostrar Vista).
+No submenu que aparece, clique em "Project Explorer" (Explorador de Projetos).

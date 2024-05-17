@@ -1,0 +1,68 @@
+Tipos inteiros: byte, short, int, long
+byte: 8 (bits) -128 a 127
+short: 16 (bits) -32.768 a 32.767
+int: 32 (bits) 2 milhoes +ou-
+long: 64 (bits) 9 milhoes +ou-
+
+Ponto flutuante: float, double
+float: 32 (bits) 
+double 64 (bits)
+Ex: float saldo1 = 200.43f; //tem q colocar o f no final, por isso não é muito usado o float
+    double saldo2 = 200.43; //é muito mais usado
+
+Booleanos: true ou false
+boolean verdadeiro = true;
+boolean falso = false;
+
+Ler dados usando a classe Scanner.
+
+Scanner scan = new Scanner(System.in); //scan pode ser mudado para qualquer nome
+
+Lendo uma linha inteira:
+String nome = scan.nextLine(); //nextLine vai ler a linha inteira (para quando achar a quebra de linha) e atribuir a String nome
+conta.setNomeCliente(scan.nextLine());
+
+
+Lendo um tipo especifico:
+String primeiroNome = scan.next(); //next pega a entrada ate o espaço em branco, então se o usuario digitar Emerson Souza, vai ser atribuido apenas Emerson a String
+int idade = scan.nextInt(); //pega entrada do tipo inteiro
+double altura = scan.nextDouble(); //pega entrada do tipo double
+
+
+
+Comparando o conteudo de uma string em java:
+String str1 = "hello";
+String str2 = "world";
+
+if (str1.equals(str2)) {	//equals verifica se str1 == str2
+    System.out.println("As strings são iguais.");
+} else {
+    System.out.println("As strings são diferentes.");
+}
+
+
+Para alinhar codigo com o eclipse: CTRL + Shift + F
+
+
+
+Classe: é algo que tem atributos e metodos. Damos "vida" a classe quando ela é instanciada.
+metodos = funções em C
+
+
+Construtor: Se ja exite algum valor ja definido para os atributos, atribuimos esse valor no contrutor de preferencia.
+usamos o contrutor para isso:
+
+Carro carro = new Carro("Fiat", 20, 5,8);
+
+
+inves disso:
+
+Carro carro = new Carro();
+carro.modelo = "Fait";
+carro.peso = 10;
+carro.km = 5,8;
+
+Palavra chave this: referencia ao atributo da classe
+this.marca = marca; //o atributo da classe marca, vai receber o parametro
+
+podemos chamar um coontrutor dentro de outro contrutor.

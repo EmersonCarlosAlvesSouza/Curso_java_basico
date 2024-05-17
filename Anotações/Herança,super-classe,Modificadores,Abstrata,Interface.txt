@@ -1,0 +1,103 @@
+Herança: Atributos (ou metodos?) que podem ser herdadas por outras classes.
+Exemplo: supondo que temos duas classes uma chamada Aluno e outra Professor e seus atributos são:
+Aluno{
+private String nome;
+private String endereco;
+private String cpf;
+private String nota;
+private String matricula;
+}
+
+Professor{
+private String nome;
+private String endereco;
+private String cpf;
+private double salario;
+}
+
+Percebemos que as duas classes tem 3 atributos em comum, logo podemos fazer uma classe com esses atributos
+para que as duas classes herdem esses atributos:
+
+//Pessoa é uma super classe
+Pessoa{
+private String nome;
+private String endereco;
+private String cpf;
+}
+
+Aluno extends Pessoa{
+private String nota;
+private String matricula;
+}
+
+Professor extends Pessoa{
+private double salario;
+}
+
+Super classe, no main:
+//criando uma instancia
+Pessoa aluno = new Aluno();
+//Teremos acesso apenas aos atributos de Pessoa, isso se chama declarar super classe
+Pessoa professor = new Professor();
+
+Antes faziamos:
+Aluno aluno = new Aluno();
+//teremos acesso aos atributos de Aluno
+
+Professor aluno = new Professor();
+//teremos acesso aos atributos do Professor
+
+
+Modificadores de acesso(especificadores de acesso):
+public: metodos e atributos visiveis para todos os pacotes
+private: metodos e atributos visiveis apenas para a propria classe
+default: somente classes que estão no pacote onde esta o atributo/metodo default, não visivel para subpacotes
+protectd: metodos e atributos visiveis para o dentro de seu pacote e dentro de sub-pacotes
+
+resumo:			Classe		Pacote		Subclasse		Todo mundo
+default(padrão):	   S		   S		    N		            N		
+public:			   S		   S		    S                       S
+protected:		   S		   S                S                       N
+private:		   S               N                N                       N
+
+Classe abstrata: apenas declaramos os metodos em uma classe abstrata, não implementamos. Sera implementado
+pela classe que extender essa classe.
+Ex: class abstrate Ave{
+	void emitirsom(); //como é uma classe abstrata, apenas declaramos o metodo
+
+}
+class abstrate Papagaio extends Ave{
+	void emitirsom(){
+		sysout("Som de papagaio!"); //Como estamos extendendo de uma classe abtrata, temos que 
+implemtar o metodo declarado nessa classe.
+}
+
+} 
+
+
+Interfaces: Quando temos uma(s) classe(s) abstrata(s) sem nunhum atributo que tenha apenas metodos 
+abstratos(seram implementado na classe que a extender) podemos transforma essa classe em uma interface.
+Interface então é uma classe abstrata que tem apenas metodos abstratos. Para que serve? em java não podemos
+extender mais de uma classe, se quisermos extender de uma classe Ave e extender de outra classe Mamifero,
+em java não é possivel. Ai entra a classe abstrata, é uma forma de implementar deferentes comportamentos de
+diferentes classes é atraves de uma interface. Todo atributo declarado em um interface é uma constante.
+
+Quando estamos em uma classe e queremos implemtar uma função de uma interface, usamos a palavra 'implements'
+e quando queremos implemnter uma função de interface em outra interface usamos o 'extends'.
+
+
+
+Diferença entre classe abstrata e interface: interface tem apenas metodos abstratos, enquanto uma classe pode
+ter tanto metodos abstratos quanto não abstratos.
+
+
+
+
+
+
+
+
+
+
+
+

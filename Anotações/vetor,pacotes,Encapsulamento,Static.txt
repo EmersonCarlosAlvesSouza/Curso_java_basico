@@ -1,0 +1,89 @@
+Declarando um vetor: 
+
+double temperaturas[] = new double[30];
+
+Atribuir valores ao vetor.
+
+int vetor[] = new int[tam];
+		
+		for(int i=0; i<vetor.length; i++) {
+			vetor[i] = scan.nextInt();		
+		}
+
+Modificadores private e public
+public: todos podem ver
+Ex: podemos usar uma classe public mesmo em outro pacote
+public class Carro; //visivel por todos os pacotes
+
+class Carro; //visivel apenas no pacote em que esta
+
+O mesmo serve para os atributos, se não tiver nenhum modeficador na frente, então é default e logo só é 
+visivel no pacote em que esta:
+
+String marca; //so visivel no pacote em que esta
+
+Mas se um atributo tiver um modificador public então ele é visivel para todos.
+public String marca; //visivel para todos
+
+
+private: somente a propria classe pode ver
+Se tiver atributo com esse modificador, esse atributo só é visivel na propria classe
+
+Resumo: 
+default: visivel por todos q estão no pacote
+private: visivel só na classe
+public: visivel por todos os pacotes
+
+
+
+Aula 32
+Encapsulamento: Não expor os atributos diretamente é chamado de encapsulamento. 
+
+Métodos getters e setters
+get: obter valor -------> sysout(van.getMarca());
+set: atribuir valor ----> van.setMarca("Fiat");
+
+
+Aula 33 (overload)
+Sobrecarga de Métodos: Mesmo nome, mas tem q ter de diferente os parametro, ou retorno ou os dois.
+ex: public int soma(int num1, int num2){
+	return num1 + num2;
+}
+
+public int soma(int num1, int num2, int num3){
+	return num1 + num2 + num3;
+}
+
+public double soma(double num1, double num2, double num3){
+	return num1 + num2;
+}
+
+Podemos ter sobrecarga de construtores tambem.
+
+Modificador Static: quando declaramos um metodo como estatico(static) não precisamos de uma istancia para 
+executar. 
+ex: Class Calculadora{
+	int soma(int num1, num2){
+		return num1 + num2;
+	{
+}
+
+
+
+Da forma q esta acima, temos q criar uma instancia no metodo main para acessar o metodo soma.
+
+Calculadora cal = new Calculadora();
+cal.soma(2,5);
+
+
+Mas se usarmos o modificador static podemos acessar o metodo soma sem criar uma instancia.
+
+ex: Class Calculadora{
+	int static soma(int num1, num2){
+		return num1 + num2;
+	{
+}
+
+Como o metodo é static podemos acessar assim no main.
+
+Calculadora.soma(2,5); //acessamos sem criar uma instancia

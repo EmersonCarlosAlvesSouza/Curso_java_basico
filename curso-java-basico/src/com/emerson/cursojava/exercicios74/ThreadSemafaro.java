@@ -1,8 +1,5 @@
 package com.emerson.cursojava.exercicios74;
 
-//import com.sun.swing.internal.plaf.synth.resources.synth;
-
-
 public class ThreadSemafaro implements Runnable {
 
 	private CorSemafaro cor;
